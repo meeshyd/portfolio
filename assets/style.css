@@ -82,7 +82,6 @@ a .fa, a i {
       	rgba(255, 91, 91, 0.64)
     ),
     url(images/desk2.jpg);
-
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -123,15 +122,15 @@ a .fa, a i {
 	margin-top: 10%;
 	width: 100%;
 	height: 400px;
-	font-size: 30px;
+	font-size: 40px;
 }
 
-#tagline {
+#intro {
 	font-weight: 700;
 }
 
 #hi {
-	font-size: 50px;
+	font-size: 60px;
 }
 #view-portfolio {
 	display: block;
@@ -154,7 +153,7 @@ a .fa, a i {
 	background-color: #fff;
 	color: #00f3f0;
 	margin: 0 auto;
-	padding: 0 150px 50px 150px;
+	padding: 0 100px 50px 100px;
 }
 
 #portfolio-page a{
@@ -199,10 +198,23 @@ a .fa, a i {
 }
 
 .portfolio-img {
-	width: 45%;
+	width: 100%;
 	height: 250px;
-	margin: 20px;
+	margin: 0 auto;
+	border: 5px solid #fff;
 	float: left;
+}
+
+h3 {
+	position: relative;
+	top: 20%;
+	font-size: 30px;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	z-index: 100;
+	color: #fff;
+	background-color: transparent;
 }
 
 .overlay {
@@ -232,24 +244,50 @@ a .fa, a i {
 /* ABOUT PAGE */
 #about-page {
 	background-color: #005952;
-	height: 100vh;
-	padding: 0 100px;
+	padding: 0 80px;
+}
+#about-content-main{
+	padding-top: 30px;
+}
+#about-page a {
+	font-size: 20px;
 }
 
-#me, #about-text {
-	position: relative;
-	float: left;
-	margin-top: 20px;
-}
-#me {
-	width: 35%;
-	height: auto;
-	padding: 0 30px 0 0;
+.about-text {
+	padding-left: 50px;
 }
 
-#about-text {
-	width: 65%;
+#me-div{
+	margin: 0 auto;
+	width: 300px;
+	height: 300px;
+	background-image: url('images/IMG_1691.JPG');
+ 	background-size: cover;
+ 	display: block;
+ 	border-radius: 300px;
+ 	-webkit-border-radius: 300px;
+ 	-moz-border-radius: 300px;
+}
+ul {
+	padding-top: 5px;
+}
+li {
 	text-align: left;
+	font-size: 14px;
+}
+
+#resume {
+	text-align: center;
+	background-color: #00f3f0;
+	margin: 0 auto;
+	width: 25%;
+	height: 50px;
+	margin-top: 30px;
+	color: #fff;
+}
+
+#email {
+	padding-top: 50px;
 }
 
 /* FOOTER PAGE */
@@ -288,6 +326,49 @@ a .fa, a i {
 	font-size: 16px;
 }
 
+@media only screen and (max-width: 768px) {
+	#about-page {
+		padding: 0;
+	}
+
+	#me-div {
+		width: 200px;
+		height: 200px;
+	}
+	.about-text {
+		margin: 0 auto;
+		width: 50%;
+		padding-left: 0;
+		float: left;
+	}
+}
+
+@media only screen and (max-width: 667px) {
+	#portfolio-page {
+		padding: 0 30px 50px 30px;
+	}
+
+	#icon-div {
+		margin: 0 auto;
+		position: relative;
+	}
+	#view-portfolio {
+		margin: 70px auto 0 auto;
+	}
+
+	#logo-img {
+		width: 70px;
+	}
+
+	#main-text {
+		padding: 0 10px;
+		font-size: 30px;
+	}
+
+	#hi {
+		font-size: 50px;
+	}
+}
 /* TO DO --- CONTACT PAGE */
 /*#contact-page{
 	background-color: #005952;
