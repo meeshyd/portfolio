@@ -1,5 +1,5 @@
-
-
+/*-----------*/
+/* GENERAL */
 body {
 	font-family: 'Inconsolata', monospace;
 	font-size: 20px;
@@ -23,27 +23,56 @@ body {
 	padding-right: 0;
 }
 
+a:hover, a:active {
+	text-decoration: none;
+	color: #fff
+}
+
 a {
 	color: #fff;
 	font-size: 30px;
 }
 
-#header a:hover {
-	text-decoration: none;
+.underline:hover {
 	border-bottom: 8px solid #00f3f0;
 }
 
-#header a:last-child:hover { 
-	border-bottom: 8px solid #005952;
+.float {
+	padding: 20px 30px 0px 30px;
+	-webkit-transition:all .3s ease-out;
+	-moz-transition:all .3s ease-out;
+	-ms-transition:all .3s ease-out;
+	-o-transition:all .3s ease-out;
+	transition:all .3s ease-out;
 }
 
-.fa {
-    font-size: 30px;
+.float:hover {
+	-webkit-transform:translate(0px,-15px);
+	-moz-transform:translate(0px,-15px);
+	-ms-transform:translate(0px,-15px);
+	-o-transform:translate(0px,-15px);
+	transform:translate(0px,-15px);
 }
 
 h1 {
-    margin-top: 5px;
+    margin: 0;
+    line-height: 0.75em;
 }
+
+a .fa, a i {
+	font-size: 45px;
+}
+
+#view-portfolio .fa:hover, #about-page .fa:hover, #view-portfolio:hover, #viewportfolio a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+.section-content-div {
+	padding-top: 20px;
+}
+
+/*-----------*/
 /* MAIN PAGE */
 #main-page {
 	height: 100vh;
@@ -58,21 +87,7 @@ h1 {
     background-size: cover;
     background-repeat: no-repeat;
 }
-
-#main-text {
-	margin-top: 10%;
-	width: 100%;
-	height: 400px;
-	font-size: 30px;
-}
-
-#tagline {
-	font-weight: 700;
-}
-
-#hi {
-	font-size: 50px;
-}
+/*MAIN PAGE header*/
 #header {
 	background-color: rgba(255, 228, 245, 0.38);
 	width: 100%;
@@ -103,18 +118,43 @@ h1 {
 	margin: 0 10px;
 	color: #fff
 }
-
-#portfolio-button {
-	display: block;
-	padding-top: 100px;
+/*MAIN PAGE main text*/
+#main-text {
+	margin-top: 10%;
+	width: 100%;
+	height: 400px;
+	font-size: 30px;
 }
 
+#tagline {
+	font-weight: 700;
+}
+
+#hi {
+	font-size: 50px;
+}
+#view-portfolio {
+	display: block;
+	margin: 100px auto 0 auto;
+	font-weight: 400;
+	cursor: pointer;
+	width: 20%;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+#view-portfolio .fa {
+	padding: 0;
+}
+
+
+/*----------------*/
 /* PORTFOLIO PAGE */
 #portfolio-page {
 	background-color: #fff;
 	color: #00f3f0;
 	margin: 0 auto;
-	padding: 0 100px 50px 100px;
+	padding: 0 150px 50px 150px;
 }
 
 #portfolio-page a{
@@ -160,7 +200,7 @@ h1 {
 
 .portfolio-img {
 	width: 45%;
-	height: 350px;
+	height: 250px;
 	margin: 20px;
 	float: left;
 }
@@ -177,8 +217,8 @@ h1 {
   left:0;
   width:100%;
   height:100%;
-  opacity:.9;
-  background-color: rgb(147, 255, 254);
+  opacity:.85;
+  background-color: rgb(103, 227, 226);
 }
 
 .overlay:hover:after  {
@@ -186,7 +226,7 @@ h1 {
   	opacity: 0;
 }
 .teal:after {
-  background-color: rgb(147, 255, 254);
+  background-color: rgb(103, 227, 226);
 }
 
 /* ABOUT PAGE */
@@ -222,9 +262,30 @@ h1 {
 	color: #fff;
 }
 
-.footer a {
-	padding: 0 5px;
+#icon-div .fa {
+	font-size: 30px;
+	padding: 0 3px;
 	margin: 0;
+}
+
+#icon-div .fa:hover {
+	/*TO DO*/
+}
+
+#icon-div, #copyright {
+	display: block;
+	position: absolute;
+}
+#icon-div {
+	top: 5px;
+	right: 20px;
+}
+
+#copyright {
+	padding: 10px;
+	bottom: 0;
+	width: 100%;
+	font-size: 16px;
 }
 
 /* TO DO --- CONTACT PAGE */

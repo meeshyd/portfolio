@@ -21,29 +21,39 @@
 <!-- MAIN PAGE -->
 		<div id="main-page">
 			<a id="main" class="smooth"></a>
+			
 			<div class="row" id="header">
 				<div class="col-md-12">
 					<a href="#main">
 						<img src="assets/images/md-logo.svg" id="logo-img">
 					</a>
 					<div id="navigation">
-						<a href="#portfolio">Portfolio</a>
-						<a href="#about">About</a>
+						<a href="#portfolio" class="underline">Portfolio</a>
+						<a href="#about" class="underline">About</a>
 <!-- 						<a href="#contact">Contact</a> -->
 					</div>
 				</div>
 			</div>
+
 			<div class="row">
 				<div id="main-text" class="col-md-12">
 					<div id="tagline">
-						<p id="hi">Hi!</p>
-
-						<p>I'm Michelle Didier, a web developer.</p>
-					</div>
-						<a id="portfolio-button" class="button" href="#portfolio" title="View portfolio items">VIEW PORTFOLIO<br><i class="fa fa-caret-down"></i></a>
+						<div id="hi">Hi!</div>
+						<div>I'm Michelle Didier, a web developer.</div>
+						
+						<a href="#portfolio">
+							<div id="view-portfolio">
+								VIEW PORTFOLIO<br>
+								<div id="down-arrow">
+									<i class="fa fa-caret-down"></i>
+								</div>
+							</div>
+						</a>
+					
 					</div>
 				</div>
 			</div>
+		
 		</div>	
 
 <!-- PORTFOLIO PAGE -->
@@ -51,12 +61,12 @@
 			<a id="portfolio" class="smooth"></a>
 			<div class="row">
 				<div class="col-md-12">
-					<a href="#main"><i class="fa fa-caret-up"></i></a>
+					<a href="#main"><i class="fa fa-caret-up float"></i></a>
 					<h1 class="section-head">PORTFOLIO</h1>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-12" id="portfolio-div">
+				<div class="col-md-12 section-content-div">
 					<a href="https://between-you-and-me.herokuapp.com/" target="_blank">
 						<div class="portfolio-img overlay teal" id="btwn"></div>
 					</a>
@@ -83,10 +93,13 @@
 		<div class="row" id= "about-page">
 			<a id="about" class="smooth"></a>
 			<div class="col-md-12">
-				<a href="#main"><i class="fa fa-caret-up"></i></a>
+				<a href="#main"><i class="fa fa-caret-up float"></i></a>
 				<h1 class="section-head">ABOUT ME</h1>
-				<img id="me" src="https://avatars1.githubusercontent.com/u/20893648?v=3&s=460">
-				<p id="about-text">Hi, hire me... please.</p>
+				<div class="section-content-div">
+					<img id="me" src="https://avatars1.githubusercontent.com/u/20893648?v=3&s=460">
+					<p id="about-text">Hi, hire me... please.</p>
+					<span id="email">For inquires and hellos, please contact me: <a href="mailto:michellemdidier@gmail.com" class="underline">michellemdidier@gmail.com</a></span>
+				</div>
 			</div>
 		</div>
 
@@ -119,64 +132,22 @@
 				</div>
 			</div>
 		</div> -->
-				
-		<div class="row footer">
-			<div class="col-md-12">
-				<i class="fa fa-envelope" aria-hidden="true"></i>
-				<a href="https://github.com/meeshyd" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-				<a href="linkedin.com/in/michelledidier" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-				<p class="text-center">Copyright © 2017 Michelle Didier</p>
-			</div>
-		</div>
-			
+<!-- FOOTER -->
+		<div class="row">
+			<div class="col-md-12 footer">
+				<div class="text-center" id="copyright">Copyright © 2017 Michelle Didier</div>
+				<div id="icon-div">
+					<a href="mailto:michellemdidier@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+					<a href="https://github.com/meeshyd" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+					<a href="linkedin.com/in/michelledidier" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+				</div>
 			</div>
 		</div>
 	
 	</div>
 
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-	<script type="text/javascript">
-	
-		//ONE PAGER SMOOTH SCROLL SCRIPT
+	<script type="text/javascript" src="assets/script.js"></script>
 
-		// Select all links with hashes
-		$('a[href*="#"]')
-			// Remove links that don't actually link to anything
-		.not('[href="#"]')
-		.not('[href="#0"]')
-
-		.click(function(event) {
-	    // On-page links
-		    if (
-		      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-		      && 
-		      location.hostname == this.hostname
-		    ) {
-		      	// Figure out element to scroll to
-		      	var target = $(this.hash);
-		    	target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-		    	// Does a scroll target exist?
-		    	if (target.length) {
-		        	// Only prevent default if animation is actually going to happen
-		        	event.preventDefault();
-		        	
-		        	$('html, body').animate({
-		          	scrollTop: target.offset().top
-		        	}, 1000, function() {
-				        // Callback after animation
-				        // Must change focus!
-				        var $target = $(target);
-				        $target.focus();
-		        		if ($target.is(":focus")) { // Checking if the target was focused
-		            		return false;
-		          		} else {
-		            		$target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-		            		$target.focus(); // Set focus again
-		          		};
-		        	});
-	      		};
-	    	};
-		});
-	</script>
 </body>
 </html>
