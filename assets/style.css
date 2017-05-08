@@ -90,15 +90,13 @@ a .fa, a i {
 #header {
 	background-color: rgba(255, 228, 245, 0.38);
 	width: 100%;
-	height: 10%;
+	height: 90px;
 }
-#header a {
-	font-size: 20px;
-}
+
 #logo-img {
 	display: block;
 	position: absolute;
-	top: 10px;
+	top: 20px;
 	left: 20px;
 	width: 100px;
 	height: auto;
@@ -108,13 +106,14 @@ a .fa, a i {
 	display: block;
 	position: absolute;
 	width: 50%;
-	top: 20px;
+	top: 25px;
 	right: 20px;
 	text-align: right;
 }
 
 #navigation a {
 	margin: 0 10px;
+	font-size: 20px;
 	color: #fff
 }
 /*MAIN PAGE main text*/
@@ -199,7 +198,7 @@ a .fa, a i {
 
 .portfolio-img {
 	width: 100%;
-	height: 250px;
+	height: 300px;
 	margin: 0 auto;
 	border: 5px solid #fff;
 	float: left;
@@ -244,17 +243,18 @@ h3 {
 /* ABOUT PAGE */
 #about-page {
 	background-color: #005952;
-	padding: 0 80px;
+	padding: 0 30px;
 }
 #about-content-main{
-	padding-top: 30px;
+	padding-top: 20px;
 }
 #about-page a {
 	font-size: 20px;
 }
 
 .about-text {
-	padding-left: 50px;
+	padding-left: 10px;
+	width: 50%;
 }
 
 #me-div{
@@ -284,10 +284,11 @@ li {
 	height: 50px;
 	margin-top: 30px;
 	color: #fff;
+	padding: 10px;
 }
 
 #email {
-	padding-top: 50px;
+	padding: 50px 0 20px 0;
 }
 
 /* FOOTER PAGE */
@@ -306,8 +307,12 @@ li {
 	margin: 0;
 }
 
+#icon-div .fa:last-child {
+	padding: 0;
+}
+
 #icon-div .fa:hover {
-	/*TO DO*/
+	color: #fff;
 }
 
 #icon-div, #copyright {
@@ -337,27 +342,32 @@ li {
 	}
 	.about-text {
 		margin: 0 auto;
-		width: 50%;
 		padding-left: 0;
 		float: left;
 	}
 }
 
 @media only screen and (max-width: 667px) {
+	#about-page {
+		padding: 0 100px;
+	}
+	.about-text {
+		width: 100%
+	}
+
+	#email, #email a {
+		font-size: 16px;
+	}
 	#portfolio-page {
 		padding: 0 30px 50px 30px;
 	}
 
 	#icon-div {
 		margin: 0 auto;
-		position: relative;
+		left: 0;
 	}
 	#view-portfolio {
 		margin: 70px auto 0 auto;
-	}
-
-	#logo-img {
-		width: 70px;
 	}
 
 	#main-text {
@@ -367,6 +377,22 @@ li {
 
 	#hi {
 		font-size: 50px;
+	}
+
+	#navigation a {
+		font-size: 18px;
+		margin: 0 5px;
+	}
+}
+
+@media only screen and (max-width: 550px) {
+	#about-page {
+		padding: 0 30px;
+	}
+
+	#resume {
+		padding: 5px;
+		height: auto;
 	}
 }
 /* TO DO --- CONTACT PAGE */
