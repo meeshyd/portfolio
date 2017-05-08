@@ -5,6 +5,23 @@ $("#view-portfolio").hover(function(){
     $("#down-arrow").animate({ paddingTop: "0px" });
 });
 
+$(".potfolio-img").hover(function(){
+	$("h3").animate({ display: "none" })
+	}, function() {
+    $("h3").animate({ display: "block" });
+})
+
+// $('.potfolio-img').hover( function() {
+//         $(this).find('.image-url').fadeIn(300);
+//     }, function() {
+//         $(this).find('.image-url').fadeOut(100);
+// });
+
+// $(".potfolio-img").hover(function(){
+// 	$(".image-url").css({ visibility: "visible" })
+// 	}, function() {
+//     $(".image-url").css({ visibility: "hidden" });
+// })
 //---ONE PAGER SMOOTH SCROLL SCRIPT---//
 
 // Select all links with hashes

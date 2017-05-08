@@ -1,5 +1,6 @@
 /*-----------*/
 /* GENERAL */
+
 body {
 	font-family: 'Inconsolata', monospace;
 	font-size: 20px;
@@ -204,7 +205,7 @@ a .fa, a i {
 	float: left;
 }
 
-h3, div .image-url {
+h3 {
 	position: relative;
 	top: 40%;
 	font-size: 40px;
@@ -213,7 +214,16 @@ h3, div .image-url {
 	z-index: 100;
 	color: #fff;
 	background-color: transparent;
+	visibility: visible;
+	display: block;
 }
+.portfolio-img .image-url {
+    display: none;
+}
+.portfolio-image:hover .image-url { /*this is where the magic happens */
+    display: inline-block;
+}
+
 .image-url {
 	color: #fff;
 }
@@ -287,6 +297,12 @@ li {
 	margin-top: 30px;
 	color: #fff;
 	padding: 10px;
+	transition: all 0.5s ease;
+}
+
+#resume:hover {
+	background-color: #fff;
+	color: #00f3f0;
 }
 
 #email {
@@ -307,6 +323,7 @@ li {
 	font-size: 30px;
 	padding: 0 3px;
 	margin: 0;
+	transition: all 0.5s ease;
 }
 
 #icon-div .fa:last-child {
@@ -314,7 +331,7 @@ li {
 }
 
 #icon-div .fa:hover {
-	color: #fff;
+	color: #00f3f0;
 }
 
 #icon-div, #copyright {
