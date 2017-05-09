@@ -28,15 +28,18 @@ h4{
 	padding-right: 0;
 }
 
-a:hover, a:active {
+a:hover, a:active, a:focus {
 	text-decoration: none;
-	color: #fff
+	color: #fff;
+	outline: none;
 }
 
 a {
 	color: #fff;
 	font-size: 30px;
 }
+
+
 .underline{
     padding-bottom: 10px;
     border-bottom: 8px solid transparent;
@@ -397,20 +400,11 @@ li p{
 	#about-page {
 		padding: 0;
 	}
-
-	.about-text {
-		margin: 0 auto;
-		padding-left: 0;
-		float: left;
-	}
 }
 
 @media only screen and (max-width: 667px) {
 	#about-page {
 		padding: 0 100px;
-	}
-	.about-text {
-		width: 100%
 	}
 
 	#email, #email a {
@@ -491,6 +485,17 @@ li p{
 	#resume {
 		padding: 5px;
 		height: auto;
+	}
+
+	.image-url a {
+		display: block;
+		margin: 0 auto 10px auto;
+		width: 75%
+	}
+
+	.link {
+	    top: 100px;
+	    padding: 5px 25px;
 	}
 }
 /* TO DO --- CONTACT PAGE */
