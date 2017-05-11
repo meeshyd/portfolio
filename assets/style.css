@@ -412,17 +412,16 @@ li p{
 
 @media only screen and (max-width: 667px) {
 
-.project-title-desktop{
-    display: none;
-}
-.project-title-mobile{
-	display: inherit;
-    position: absolute;
-    top:40px;
-    font-size: 40px;
-    font-weight: 700;
-}
-
+	.project-title-desktop{
+    	display: none;
+	}
+	.project-title-mobile{
+		display: inherit;
+	    position: absolute;
+	    top:40px;
+	    font-size: 40px;
+	    font-weight: 700;
+	}
 	#me-div{
 	    width: 275px;
 	    height: 275px;
@@ -533,6 +532,9 @@ li p{
 		width: 100%;
 		padding: 5px;
 		margin: 0 auto;
+	}
+	.project-title-mobile{
+	    font-size: 30px;
 	}
 }
 /* TO DO --- CONTACT PAGE */
