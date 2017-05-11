@@ -1,4 +1,6 @@
+
 $(document).ready(function(){
+
     $("#view-portfolio").hover(function(){
         $("#down-arrow").animate({ paddingTop: "20px" });
         }, function() {
@@ -6,23 +8,23 @@ $(document).ready(function(){
     });
 
 
+
     //---PROJECT OVERLAY SCRIPT---//
-
-    $( ".project-wrap" ).each(function( index ) {
-        var overlay = jQuery(this).children(".overlay");
-        var imageURL = jQuery(this).children(".image-url");
-        //console.log(this.innerHTML);
-        $(this).mouseenter(function(){
-           overlay.animate({ opacity: "0" });
-           imageURL.animate({ opacity: "1", bottom: "+=50" });
-        })
-        $(this).mouseleave(function(){
-           overlay.animate({ opacity: "1" });
-           imageURL.animate({ opacity: "0", bottom: "-=50" });
-        })
-
-    });
-
+    if ( $(window).width() > 667) { 
+        $( ".project-wrap" ).each(function( index ) {
+            var overlay = jQuery(this).children(".overlay");
+            var imageURL = jQuery(this).children(".image-url");
+            //console.log(this.innerHTML);
+            $(this).mouseenter(function(){
+               overlay.animate({ opacity: "0" });
+               imageURL.animate({ opacity: "1", bottom: "+=50" });
+            })
+            $(this).mouseleave(function(){
+               overlay.animate({ opacity: "1" });
+               imageURL.animate({ opacity: "0", bottom: "-=50" });
+            })
+        });
+    };
 
     //---ONE PAGER SMOOTH SCROLL SCRIPT---//
 
