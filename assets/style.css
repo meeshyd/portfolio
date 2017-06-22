@@ -182,6 +182,22 @@ a .fa, a i {
 }
 
 /*portfolio images*/
+#plaudit {
+	background: url('images/plaudit.png');
+	background-size: 300px auto;
+	background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#rainbow {
+	background: url('images/rainbow.jpg');
+	background-size: 300px auto;
+	background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 #btwn {
 	background: url('images/betweenyouandme.jpg');
 	background-size: 300px auto;
@@ -205,21 +221,6 @@ a .fa, a i {
 }
 #trivia {
 	background: url('images/cocktailtrivia.jpg');
-	background-size: 300px auto;
-	background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-#plaudit {
-	background: url('images/plaudit.png');
-	background-size: 300px auto;
-	background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-#rainbow-scraper {
-	background: url('images/rainbow.jpg');
 	background-size: 300px auto;
 	background-position: center;
     background-size: cover;
