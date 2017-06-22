@@ -210,8 +210,16 @@ a .fa, a i {
     background-size: cover;
     background-repeat: no-repeat;
 }
-#gummy {
-	background: url('images/gummybear.jpg');
+#plaudit {
+	background: url('images/plaudit.png');
+	background-size: 300px auto;
+	background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#rainbow-scraper {
+	background: url('images/rainbow.png');
 	background-size: 300px auto;
 	background-position: center;
     background-size: cover;
