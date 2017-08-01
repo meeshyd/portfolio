@@ -182,6 +182,15 @@ a .fa, a i {
 }
 
 /*portfolio images*/
+
+#plantr {
+	background: url('images/plantr.jpg');
+	background-size: 300px auto;
+	background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 #plaudit {
 	background: url('images/plaudit.png');
 	background-size: 300px auto;
