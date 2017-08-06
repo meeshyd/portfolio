@@ -413,6 +413,10 @@ li p{
 	background-color: #00f3f0;
 }
 
+#confirm {
+	height: 30px;
+}
+
 /* FOOTER PAGE */
 .footer {
 	height: 90px;
@@ -469,6 +473,13 @@ li p{
     	width: 80%;
     	display: block;
     	margin: 0 auto;
+    }
+
+    p {
+    	width: 80%;
+    	display: block;
+    	margin: 0 auto;
+    	font-size: 18px;
     }
 }
 
@@ -544,7 +555,7 @@ li p{
 	}
 
 	p {
-		font-size: 14px;
+		font-size: 16px;
 	}
 }
 
