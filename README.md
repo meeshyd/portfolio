@@ -1,2 +1,2 @@
 # portfolio
-personal portfolio
+<http://www.michelledidier.com>
