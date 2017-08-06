@@ -1,0 +1,22 @@
+{
+  "name": "meeshyd's Portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.15.3",
+    "nodemailer": "^4.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rpalmore/portfolio-bootstrap.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://github.com/meeshyd/portfolio"
+}

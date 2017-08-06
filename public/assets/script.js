@@ -65,4 +65,41 @@ $(document).ready(function(){
             };
         };
     });
+
+    // Contact Me Email script
+    $("#sender" && "#address").change(function() {
+        $("#send-email").removeAttr("disabled");
+        console.log( "Handler for .change() called." );
+    });
+    
+    $("#send-email").click(function(event) {
+        event.preventDefault();
+        var name = $("#sender").val().trim();
+        var address = $("#address").val().trim();
+        var text = $("#message").val().trim();
+        $("#confirm").text("Sending your message...");
+          $.post("/email", {
+            from: name,
+            address: address,
+            text: text
+            }, function(data) {
+              if (data === "buffalochicken") {
+                $("#confirm").empty().html("Your email was sent. I will be in touch with you soon!");
+                clearMessage();
+              } else {
+                alert("Email not sent!");
+              }
+          });
+        $("#sender").val("");
+        $("#address").val("");
+        $("#message").val("");
+    });
 });
+
+function clearMessage() {
+    setTimeout(confirm, 3000);
+}
+
+function confirm() {
+    $("#confirm").fadeOut("slow");
+};      

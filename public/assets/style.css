@@ -373,6 +373,13 @@ li p{
 	padding: 50px 0 70px 0;
     font-size: 16px;
 }
+/* CONTACT PAGE */
+#contact-page {
+	height: 80vh;
+	background-color: #000;
+}
+
+
 
 /* FOOTER PAGE */
 .footer {
