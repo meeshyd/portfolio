@@ -8,7 +8,7 @@ var express = require("express");
 // Sets up the Express App
 // =============================================================
 var app = express();
-var PORT = process.env.PORT || 8888;
+var PORT = process.env.PORT || 3000;
 var nodemailer = require("nodemailer");
 var path = require("path")
 // *** Dependencies
@@ -22,9 +22,9 @@ app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
 // Serve static content for the app from the "public" directory in the application directory.
-app.use(express.static(process.cwd() + "/public"));
+app.use(express.static("./public"));
 
-if (PORT === 8888) {
+if (PORT === 3000) {
     var authentication = require("./config/authentication.js");
 } else {
     console.log("Heroku connection");
