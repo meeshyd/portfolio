@@ -43,7 +43,7 @@ a {
 	text-align: center;
 	background-color: #00f3f0;
 	margin: 0 auto;
-	width: 100%;
+	width: 50%;
 	height: 50px;
 	margin-top: 30px;
 	color: #fff;
@@ -336,6 +336,7 @@ h3 {
     background-image: url(images/floral-bg.png);
     background-repeat: repeat;
 	padding: 0 8%;
+	height: 100vh;
 }
 #about-content-main{
 	padding-top: 80px;
@@ -357,6 +358,7 @@ h3 {
     height: auto;
     padding-top: 100%;
 }
+
 ul {
 	padding-top: 5px;
     padding-left: 20px;
@@ -373,10 +375,6 @@ li p{
     font-size: 16px;
 }
 
-#email {
-	padding: 50px 0 70px 0;
-    font-size: 16px;
-}
 /* CONTACT PAGE */
 #contact-page {
 	height: 80vh;
@@ -408,7 +406,6 @@ li p{
 }
 
 #send-email {
-	width: 50%;
 	background-color: #ff8c95;
 }
 
