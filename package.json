@@ -1,10 +1,9 @@
 {
-  "name": "meeshyd's Portfolio",
+  "name": "portfolio",
   "version": "1.0.0",
-  "description": "",
+  "description": "meeshyd's portfolio site",
   "main": "server.js",
   "dependencies": {
-    "path": "^0.12.7",
     "body-parser": "^1.17.2",
     "express": "^4.15.3",
     "nodemailer": "^4.0.1"
@@ -12,13 +11,16 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rpalmore/portfolio-bootstrap.git"
+    "url": "git+https://github.com/meeshyd/portfolio.git"
   },
-  "author": "",
+  "author": "meeshyd, Michelle Didier",
   "license": "ISC",
-  "homepage": "https://github.com/meeshyd/portfolio"
+  "bugs": {
+    "url": "https://github.com/meeshyd/portfolio/issues"
+  },
+  "homepage": "https://github.com/meeshyd/portfolio#readme"
 }
