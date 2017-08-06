@@ -397,6 +397,7 @@ li p{
     border: 2px solid #ff8c95;
     border-radius: 1px;
     box-shadow: none;
+    font-size: 16px;
 }
 .form-control:focus {
     border-color: none;
