@@ -377,7 +377,7 @@ li p{
 
 /* CONTACT PAGE */
 #contact-page {
-	height: 80vh;
+	min-height: 85vh;
 	background-color: #fff;
 	color: #ff8c95;
 }
@@ -541,6 +541,10 @@ li p{
 	}
 	.image-url {
 		opacity: 1;
+	}
+
+	p {
+		font-size: 14px;
 	}
 }
 
